@@ -20,12 +20,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    # This bypasses the missing gradlew file by installing gradle on the cloud system directly
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
 
+    # The fix: This forces Gradle to bypass the custom missing keystore configuration
     - name: Compile and Build Debug APK
-      run: gradle assembleDebug
+      run: gradle assembleDebug -Pandroid.injected.signing.config.signingConfig=debug
 
     - name: Upload APK Binary to GitHub
       uses: actions/upload-artifact@v4
