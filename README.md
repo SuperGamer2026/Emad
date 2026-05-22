@@ -57,5 +57,11 @@ The core user interface utilizes an ultra-clean layout to deliver vital context 
 * **Local Storage:** SQLite via Room Database / SharedPreferences (for theme and streak persistence)
 * **State Management:** Jetpack ViewModel
 
+---
+
+## 📜 License
+This project is open-source and licensed under the **GNU General Public License v3.0**. View the official **[LICENSE](LICENSE)** file for full terms and conditions.
+* **State Management:** Jetpack ViewModel
+
 ## 📜 License
 This project is open-source and licensed under the **GNU General Public License v3.0 (GPL-3.0)**. See the `LICENSE` file for details.
