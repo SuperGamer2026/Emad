@@ -1,0 +1,34 @@
+name: Android CI - Build Emad APK
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
+
+    # The fix: This forces Gradle to bypass the custom missing keystore configuration
+    - name: Compile and Build Debug APK
+      run: gradle assembleDebug -Pandroid.injected.signing.config.signingConfig=debug
+
+    - name: Upload APK Binary to GitHub
+      uses: actions/upload-artifact@v4
+      with:
+        name: Emad-v1.0-DebugAPK
+        path: app/build/outputs/apk/debug/app-debug.apk

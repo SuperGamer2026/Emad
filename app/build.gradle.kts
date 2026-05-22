@@ -44,7 +44,8 @@ android {
       signingConfig = signingConfigs.getByName("release")
     }
     debug {
-      signingConfig = signingConfigs.getByName("debugConfig")
+      // Changed from "debugConfig" to use the standard built-in android debug key
+      signingConfig = signingConfigs.getByName("debug")
     }
   }
   compileOptions {

@@ -1,21 +1,56 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+<img width="1200" alt="Emad Premium Showcase Banner" src="EmadShowcaseBanner.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Emad 🌌
+A highly polished, celestial-glassmorphic Islamic prayer and Qada tracker engineered with Kotlin and Jetpack Compose.
 
-This contains everything you need to run your app locally.
+## 💡 The Story Behind Emad
 
-View your app in AI Studio: https://ai.studio/apps/73015748-fa60-4028-988a-b30202b5b954
+Most modern Islamic prayer applications suffer from the same fundamental issues: they are cluttered with intrusive ads, bogged down by third-party data tracking, or trapped in outdated design philosophies from a decade ago. Keeping up with your spiritual habits shouldn't feel like navigating a bloated corporate utility app.
 
-## Run Locally
+Emad was born out of a desire for something better—a seamless, completely private, and visually stunning companion. Built from the ground up around clean glassmorphic design languages, fluid micro-interactions, and intentional habit mechanics, it shifts the focus entirely back to personal mindfulness, consistency, and clear progression.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+> **Note on Architecture:** This app was entirely designed, architected, and engineered through precise orchestration and prompt streaming inside Google AI Studio utilizing the Gemini 3.5 Flash model.
 
+---
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+## 📲 Direct Download & Installation
+
+You don't need to configure complex developer tools or compile code locally to start tracking. 
+
+1. Navigate to the **[Releases](https://github.com/SuperGamer2026/Emad/releases)** hub on the right-hand sidebar of this page.
+2. Download the latest pre-compiled **`Emad_v1.0.apk`** directly to your Android device.
+3. Open the downloaded file on your phone to install it instantly.
+
+---
+
+## 🔥 Key Visual & Technical Highlights
+
+### 1. The Qada Forge & Rebuild Engine
+A dedicated management hub built specifically for tracking historical missed prayers, moving far beyond basic static daily logs.
+* **Target Calibration:** Establish custom recovery metrics for specific prayer windows.
+* **Auto-Reset Milestones:** A persistence meter maps progression toward full recovery. Once your milestone threshold is achieved, the Forge automatically recalibrates and clears the interface for the next block.
+
+### 2. Micro-Habit Pillars & Dashboard
+The core user interface utilizes an ultra-clean layout to deliver vital context at a glance:
+* **Celestial Countdown:** A fluid, centralized elliptical countdown timer tracking the exact remaining time until the next prayer call.
+* **Consistency Tiers:** A gamified progression metric that dynamically updates your status (e.g., *Seeker of Light*) based on historical tracking stability.
+* **Weekly Metrics Bar Chart:** A custom vertical bar layout mapping daily completion status across both Fardh (obligatory) and Sunnah prayers over a rolling 7-day canvas.
+
+### 3. Deep Aesthetic Personalization
+* **Premium Theme Ecosystem:** Seamlessly toggle between highly tailored color presets like *Expressive*, *Cosmic Noir*, and *Midnight Teal* to entirely reshape the application atmosphere.
+* **Two-Dot Unified Interface:** Theme and config selectors utilize a minimalist, matching two-dot color indicator layout across onboarding and settings menus for absolute visual continuity.
+* **Dynamic Streak Milestones:** Built-in rewards track your active consistency metrics, giving you concrete, progressive achievements (*Novice Flame*, *Spark Initiate*, *Torchbearer*) to keep your tracking habits active.
+* **Sensor-Driven Qibla Finder:** A beautifully integrated, smooth compass tracking system calculated directly for your coordinates with clean touch/drag simulation parameters built right in for testing.
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Kotlin
+* **UI Framework:** Jetpack Compose (Declarative UI)
+* **Local Storage:** SQLite via Room Database / SharedPreferences (for theme and streak persistence)
+* **State Management:** Jetpack ViewModel
+
+## 📜 License
+This project is open-source and licensed under the **GNU General Public License v3.0 (GPL-3.0)**. See the `LICENSE` file for details.
