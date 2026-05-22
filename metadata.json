@@ -1,0 +1,6 @@
+{
+  "name": "Emad",
+  "description": "الصلاة عماد الدين - Track and improve consistency in Salah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
