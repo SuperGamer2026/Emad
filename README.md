@@ -1,6 +1,4 @@
-<div align="center">
-<img width="1200" alt="Emad Premium Showcase Banner" src="EmadBanner.png?v=3" />
-</div>
+![Emad Premium Showcase Banner](EmadBanner.png)
 
 # Emad 🌌
 A highly polished, celestial-glassmorphic Islamic prayer and Qada tracker engineered with Kotlin and Jetpack Compose.
@@ -41,9 +39,7 @@ The core user interface utilizes an ultra-clean layout to deliver vital context 
 ### 3. Deep Aesthetic Personalization
 * **19 Premium Color Presets & App Icons:** Includes highly tailored colorways like *Expressive*, *Cosmic Noir*, and *Midnight Teal* to entirely reshape the application atmosphere alongside matching visual themes.
 
-<div align="center">
-<img width="800" alt="Emad Color Themes Showcase" src="EmadScreenshot.png" />
-</div>
+![Emad Color Themes Showcase](EmadScreenshot.png)
 
 * **Two-Dot Unified Interface:** Theme and config selectors utilize a minimalist, matching two-dot color indicator layout across onboarding and settings menus for absolute visual consistency.
 * **Dynamic Streak Milestones:** Built-in rewards track your active consistency metrics, giving you concrete, progressive achievements (*Novice Flame*, *Spark Initiate*, *Torchbearer*) to keep your tracking habits active.
