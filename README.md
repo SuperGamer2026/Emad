@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" alt="Emad Premium Showcase Banner" src="EmadBanner.png?v=2" />
+<img width="1200" alt="Emad Premium Showcase Banner" src="EmadBanner.png" />
 </div>
 
 # Emad 🌌
